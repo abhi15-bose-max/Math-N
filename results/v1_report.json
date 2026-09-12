@@ -1,0 +1,391 @@
+{
+  "dataset_size": 40,
+  "by_family": {
+    "ode": 10,
+    "parameter_estimation": 10,
+    "roots": 10,
+    "symbolic": 10
+  },
+  "max_attempts": 5,
+  "generators": {
+    "scipy": {
+      "metrics": {
+        "total_problems": 40,
+        "first_attempt_successes": 19,
+        "final_successes": 40,
+        "first_attempt_success_rate": 0.475,
+        "final_success_rate": 1.0,
+        "average_attempts": 2.25,
+        "median_attempts": 2.0,
+        "mean_absolute_error": 0.026149211890065513,
+        "mean_relative_error": 0.005649674004024732,
+        "timeout_count": 0,
+        "malformed_candidate_count": 0,
+        "duplicate_count": 1,
+        "total_generation_runtime_seconds": 0.025731325149536133,
+        "total_verification_runtime_seconds": 1.7063040733337402,
+        "success_after_attempt": {
+          "success_after_attempt_1": 19,
+          "success_after_attempt_2": 21,
+          "success_after_attempt_3": 30,
+          "success_after_attempt_4": 40,
+          "success_after_attempt_5": 40
+        },
+        "by_family": {
+          "ode": {
+            "total": 10,
+            "final_successes": 10,
+            "final_success_rate": 1.0,
+            "mean_absolute_error": 6.725153270786821e-06
+          },
+          "parameter_estimation": {
+            "total": 10,
+            "final_successes": 10,
+            "final_success_rate": 1.0,
+            "mean_absolute_error": 0.10451068213050162
+          },
+          "roots": {
+            "total": 10,
+            "final_successes": 10,
+            "final_success_rate": 1.0,
+            "mean_absolute_error": 1.4172207574159046e-08
+          },
+          "symbolic": {
+            "total": 10,
+            "final_successes": 10,
+            "final_success_rate": 1.0,
+            "mean_absolute_error": 7.942610428207653e-05
+          }
+        },
+        "by_generator": {
+          "scipy": {
+            "total": 40,
+            "final_successes": 40,
+            "final_success_rate": 1.0
+          }
+        }
+      },
+      "failure_analysis": {
+        "category_counts": {
+          "NUMERICAL_MISMATCH": 21,
+          "RESIDUAL_TOO_LARGE": 29
+        },
+        "category_by_family": {
+          "ode": {
+            "NUMERICAL_MISMATCH": 9
+          },
+          "roots": {
+            "RESIDUAL_TOO_LARGE": 29
+          },
+          "symbolic": {
+            "NUMERICAL_MISMATCH": 12
+          }
+        },
+        "category_by_generator": {
+          "scipy": {
+            "NUMERICAL_MISMATCH": 21,
+            "RESIDUAL_TOO_LARGE": 29
+          }
+        },
+        "unsolved_problems": [],
+        "num_unsolved": 0,
+        "problems_requiring_retries": [
+          "mathn_ode_20260101_000",
+          "mathn_ode_20260104_003",
+          "mathn_ode_20260105_004",
+          "mathn_ode_20260106_005",
+          "mathn_ode_20260108_007",
+          "mathn_root_20261101_000",
+          "mathn_root_20261102_001",
+          "mathn_root_20261103_002",
+          "mathn_root_20261104_003",
+          "mathn_root_20261105_004",
+          "mathn_root_20261106_005",
+          "mathn_root_20261107_006",
+          "mathn_root_20261108_007",
+          "mathn_root_20261109_008",
+          "mathn_root_20261110_009",
+          "mathn_sym_20263101_000",
+          "mathn_sym_20263103_002",
+          "mathn_sym_20263105_004",
+          "mathn_sym_20263106_005",
+          "mathn_sym_20263107_006",
+          "mathn_sym_20263109_008"
+        ],
+        "num_requiring_retries": 21,
+        "convergence_after_retry": [
+          {
+            "problem_id": "mathn_ode_20260101_000",
+            "family": "ode",
+            "generator": "scipy",
+            "attempts_used": 3
+          },
+          {
+            "problem_id": "mathn_ode_20260104_003",
+            "family": "ode",
+            "generator": "scipy",
+            "attempts_used": 3
+          },
+          {
+            "problem_id": "mathn_ode_20260105_004",
+            "family": "ode",
+            "generator": "scipy",
+            "attempts_used": 3
+          },
+          {
+            "problem_id": "mathn_ode_20260106_005",
+            "family": "ode",
+            "generator": "scipy",
+            "attempts_used": 3
+          },
+          {
+            "problem_id": "mathn_ode_20260108_007",
+            "family": "ode",
+            "generator": "scipy",
+            "attempts_used": 2
+          },
+          {
+            "problem_id": "mathn_root_20261101_000",
+            "family": "roots",
+            "generator": "scipy",
+            "attempts_used": 4
+          },
+          {
+            "problem_id": "mathn_root_20261102_001",
+            "family": "roots",
+            "generator": "scipy",
+            "attempts_used": 4
+          },
+          {
+            "problem_id": "mathn_root_20261103_002",
+            "family": "roots",
+            "generator": "scipy",
+            "attempts_used": 4
+          },
+          {
+            "problem_id": "mathn_root_20261104_003",
+            "family": "roots",
+            "generator": "scipy",
+            "attempts_used": 4
+          },
+          {
+            "problem_id": "mathn_root_20261105_004",
+            "family": "roots",
+            "generator": "scipy",
+            "attempts_used": 4
+          },
+          {
+            "problem_id": "mathn_root_20261106_005",
+            "family": "roots",
+            "generator": "scipy",
+            "attempts_used": 4
+          },
+          {
+            "problem_id": "mathn_root_20261107_006",
+            "family": "roots",
+            "generator": "scipy",
+            "attempts_used": 3
+          },
+          {
+            "problem_id": "mathn_root_20261108_007",
+            "family": "roots",
+            "generator": "scipy",
+            "attempts_used": 4
+          },
+          {
+            "problem_id": "mathn_root_20261109_008",
+            "family": "roots",
+            "generator": "scipy",
+            "attempts_used": 4
+          },
+          {
+            "problem_id": "mathn_root_20261110_009",
+            "family": "roots",
+            "generator": "scipy",
+            "attempts_used": 4
+          },
+          {
+            "problem_id": "mathn_sym_20263101_000",
+            "family": "symbolic",
+            "generator": "scipy",
+            "attempts_used": 3
+          },
+          {
+            "problem_id": "mathn_sym_20263103_002",
+            "family": "symbolic",
+            "generator": "scipy",
+            "attempts_used": 3
+          },
+          {
+            "problem_id": "mathn_sym_20263105_004",
+            "family": "symbolic",
+            "generator": "scipy",
+            "attempts_used": 3
+          },
+          {
+            "problem_id": "mathn_sym_20263106_005",
+            "family": "symbolic",
+            "generator": "scipy",
+            "attempts_used": 2
+          },
+          {
+            "problem_id": "mathn_sym_20263107_006",
+            "family": "symbolic",
+            "generator": "scipy",
+            "attempts_used": 3
+          },
+          {
+            "problem_id": "mathn_sym_20263109_008",
+            "family": "symbolic",
+            "generator": "scipy",
+            "attempts_used": 4
+          }
+        ],
+        "num_converged_after_retry": 21,
+        "largest_errors_top10": []
+      },
+      "wall_time_seconds": 1.75563645362854
+    },
+    "sympy": {
+      "metrics": {
+        "total_problems": 40,
+        "first_attempt_successes": 36,
+        "final_successes": 36,
+        "first_attempt_success_rate": 0.9,
+        "final_success_rate": 0.9,
+        "average_attempts": 1.175,
+        "median_attempts": 1.0,
+        "mean_absolute_error": 0.3403447638837845,
+        "mean_relative_error": 0.5848189174690895,
+        "timeout_count": 0,
+        "malformed_candidate_count": 5,
+        "duplicate_count": 3,
+        "total_generation_runtime_seconds": 2.603092670440674,
+        "total_verification_runtime_seconds": 0.6449761390686035,
+        "success_after_attempt": {
+          "success_after_attempt_1": 36,
+          "success_after_attempt_2": 36,
+          "success_after_attempt_3": 36,
+          "success_after_attempt_4": 36,
+          "success_after_attempt_5": 36
+        },
+        "by_family": {
+          "ode": {
+            "total": 10,
+            "final_successes": 10,
+            "final_success_rate": 1.0,
+            "mean_absolute_error": 3.0808688933348094e-15
+          },
+          "parameter_estimation": {
+            "total": 10,
+            "final_successes": 6,
+            "final_success_rate": 0.6,
+            "mean_absolute_error": 1.47482731016224
+          },
+          "roots": {
+            "total": 10,
+            "final_successes": 10,
+            "final_success_rate": 1.0,
+            "mean_absolute_error": 3.2862601528904635e-15
+          },
+          "symbolic": {
+            "total": 10,
+            "final_successes": 10,
+            "final_success_rate": 1.0,
+            "mean_absolute_error": 7.371547816603652e-13
+          }
+        },
+        "by_generator": {
+          "sympy": {
+            "total": 40,
+            "final_successes": 36,
+            "final_success_rate": 0.9
+          }
+        }
+      },
+      "failure_analysis": {
+        "category_counts": {
+          "NUMERICAL_MISMATCH": 6,
+          "MALFORMED_CANDIDATE": 5
+        },
+        "category_by_family": {
+          "parameter_estimation": {
+            "NUMERICAL_MISMATCH": 6,
+            "MALFORMED_CANDIDATE": 5
+          }
+        },
+        "category_by_generator": {
+          "sympy": {
+            "NUMERICAL_MISMATCH": 6,
+            "MALFORMED_CANDIDATE": 5
+          }
+        },
+        "unsolved_problems": [
+          {
+            "problem_id": "mathn_param_20262102_001",
+            "family": "parameter_estimation",
+            "generator": "sympy",
+            "final_status": "NUMERICAL_MISMATCH",
+            "attempts_used": 2
+          },
+          {
+            "problem_id": "mathn_param_20262103_002",
+            "family": "parameter_estimation",
+            "generator": "sympy",
+            "final_status": "NUMERICAL_MISMATCH",
+            "attempts_used": 2
+          },
+          {
+            "problem_id": "mathn_param_20262107_006",
+            "family": "parameter_estimation",
+            "generator": "sympy",
+            "final_status": "NUMERICAL_MISMATCH",
+            "attempts_used": 2
+          },
+          {
+            "problem_id": "mathn_param_20262110_009",
+            "family": "parameter_estimation",
+            "generator": "sympy",
+            "final_status": "MALFORMED_CANDIDATE",
+            "attempts_used": 5
+          }
+        ],
+        "num_unsolved": 4,
+        "problems_requiring_retries": [
+          "mathn_param_20262102_001",
+          "mathn_param_20262103_002",
+          "mathn_param_20262107_006",
+          "mathn_param_20262110_009"
+        ],
+        "num_requiring_retries": 4,
+        "convergence_after_retry": [],
+        "num_converged_after_retry": 0,
+        "largest_errors_top10": [
+          {
+            "problem_id": "mathn_param_20262107_006",
+            "family": "parameter_estimation",
+            "generator": "sympy",
+            "absolute_error": 7.742672250636733,
+            "status": "NUMERICAL_MISMATCH"
+          },
+          {
+            "problem_id": "mathn_param_20262103_002",
+            "family": "parameter_estimation",
+            "generator": "sympy",
+            "absolute_error": 3.383493539137498,
+            "status": "NUMERICAL_MISMATCH"
+          },
+          {
+            "problem_id": "mathn_param_20262102_001",
+            "family": "parameter_estimation",
+            "generator": "sympy",
+            "absolute_error": 1.2008125176278488,
+            "status": "NUMERICAL_MISMATCH"
+          }
+        ]
+      },
+      "wall_time_seconds": 3.3744444847106934
+    }
+  },
+  "total_wall_time_seconds": 5.131744861602783
+}

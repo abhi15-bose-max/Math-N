@@ -1,0 +1,40 @@
+# Default configuration for MATH-N V1.
+#
+# Every numeric knob that controls the experiment lives here so nothing
+# is scattered as a magic constant inside the source code.
+
+max_attempts: 5
+
+retry:
+  generator_timeout_seconds: 30
+  verifier_timeout_seconds: 30
+
+verifiers:
+  ode:
+    atol: 1.0e-6
+    rtol: 1.0e-5
+  roots:
+    residual_tolerance: 1.0e-6
+  parameter_estimation:
+    # interpreted as a *relative* RMSE (fraction of mean |observation|)
+    rmse_threshold: 0.05
+  symbolic:
+    atol: 1.0e-4
+    rtol: 1.0e-4
+
+dataset:
+  path: datasets/v1
+  problems_per_family: 10
+  base_seed: 20260101
+
+generators:
+  # which candidate generators to run the benchmark with
+  - scipy
+  - sympy
+
+logging:
+  trajectories_path: trajectories
+  save_raw_output: true
+
+results:
+  path: results

@@ -1,0 +1,7 @@
+numpy>=1.24
+scipy>=1.10
+sympy>=1.12
+pyyaml>=6.0
+
+# optional, for running tests with nicer output than `python -m unittest`
+pytest>=7.0
