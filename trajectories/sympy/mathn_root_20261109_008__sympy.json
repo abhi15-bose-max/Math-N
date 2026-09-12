@@ -1,0 +1,54 @@
+{
+  "trajectory_id": "ec33069a-d2c4-45b3-a536-cc91341b586f",
+  "problem_id": "mathn_root_20261109_008",
+  "generator": "sympy",
+  "family": "roots",
+  "subtype": "nonlinear",
+  "created_at": 1789192452.137348,
+  "configuration": {
+    "max_attempts": 5,
+    "generator_timeout_seconds": 30,
+    "verifier_timeout_seconds": 30
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate": {
+        "problem_id": "mathn_root_20261109_008",
+        "generator": "sympy",
+        "attempt": 1,
+        "result": {
+          "x": 1.2142089160511051
+        },
+        "raw": {
+          "method": "sympy.LambertW"
+        },
+        "runtime_seconds": 0.00046944618225097656,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": true,
+        "status": "VERIFIED",
+        "details": {
+          "x": 1.2142089160511051,
+          "residual": 0.0,
+          "absolute_residual": 0.0,
+          "tolerance": 1e-06,
+          "domain": [
+            0.0,
+            6.0
+          ]
+        },
+        "runtime_seconds": 5.4836273193359375e-06,
+        "message": null
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    }
+  ],
+  "final_status": "VERIFIED",
+  "attempts_used": 1,
+  "total_runtime_seconds": 0.0005693435668945312
+}

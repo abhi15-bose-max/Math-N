@@ -1,0 +1,64 @@
+{
+  "trajectory_id": "48261f90-4d4f-4500-b8d6-5e4c4b16cafb",
+  "problem_id": "mathn_param_20262110_009",
+  "generator": "scipy",
+  "family": "parameter_estimation",
+  "subtype": "logistic_growth_fit",
+  "created_at": 1789192448.9540756,
+  "configuration": {
+    "max_attempts": 5,
+    "generator_timeout_seconds": 30,
+    "verifier_timeout_seconds": 30
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate": {
+        "problem_id": "mathn_param_20262110_009",
+        "generator": "scipy",
+        "attempt": 1,
+        "result": {
+          "parameters": {
+            "r": 0.3812967491816521,
+            "K": 26.226463997336786
+          }
+        },
+        "raw": {
+          "method": "least_squares",
+          "x0": [
+            0.1,
+            5.572545556510869
+          ]
+        },
+        "runtime_seconds": 0.0020563602447509766,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": true,
+        "status": "VERIFIED",
+        "details": {
+          "parameters": {
+            "r": 0.3812967491816521,
+            "K": 26.226463997336786
+          },
+          "simulation_rmse": 0.07346780143490636,
+          "relative_rmse": 0.016358457916193374,
+          "threshold": 0.05,
+          "parameter_error": {
+            "r": 0.004836391207413027,
+            "K": 1.9845410974074653
+          }
+        },
+        "runtime_seconds": 3.838539123535156e-05,
+        "message": null
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    }
+  ],
+  "final_status": "VERIFIED",
+  "attempts_used": 1,
+  "total_runtime_seconds": 0.002186298370361328
+}

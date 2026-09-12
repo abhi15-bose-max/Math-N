@@ -1,0 +1,58 @@
+{
+  "trajectory_id": "0bba4731-828a-4315-be34-5692fbbec2dd",
+  "problem_id": "mathn_root_20261101_000",
+  "generator": "sympy",
+  "family": "roots",
+  "subtype": "polynomial",
+  "created_at": 1789192452.0394878,
+  "configuration": {
+    "max_attempts": 5,
+    "generator_timeout_seconds": 30,
+    "verifier_timeout_seconds": 30
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate": {
+        "problem_id": "mathn_root_20261101_000",
+        "generator": "sympy",
+        "attempt": 1,
+        "result": {
+          "x": 0.9157071671238187
+        },
+        "raw": {
+          "method": "sympy.solve",
+          "all_roots": [
+            -1.4793339157292418,
+            0.9157071671238187
+          ]
+        },
+        "runtime_seconds": 0.053681373596191406,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": true,
+        "status": "VERIFIED",
+        "details": {
+          "x": 0.9157071671238187,
+          "residual": -3.1086244689504383e-15,
+          "absolute_residual": 3.1086244689504383e-15,
+          "tolerance": 1e-06,
+          "domain": [
+            0.46570716712381993,
+            1.36570716712382
+          ]
+        },
+        "runtime_seconds": 8.106231689453125e-06,
+        "message": null
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    }
+  ],
+  "final_status": "VERIFIED",
+  "attempts_used": 1,
+  "total_runtime_seconds": 0.053792715072631836
+}

@@ -1,0 +1,92 @@
+{
+  "trajectory_id": "3a867b7a-be6a-41ea-a869-fb2f3978917f",
+  "problem_id": "mathn_ode_20260108_007",
+  "generator": "scipy",
+  "family": "ode",
+  "subtype": "logistic_growth",
+  "created_at": 1789192448.8749838,
+  "configuration": {
+    "max_attempts": 5,
+    "generator_timeout_seconds": 30,
+    "verifier_timeout_seconds": 30
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate": {
+        "problem_id": "mathn_ode_20260108_007",
+        "generator": "scipy",
+        "attempt": 1,
+        "result": {
+          "y_t_query": 5.579242241712186
+        },
+        "raw": {
+          "method": "RK45",
+          "rtol": 0.01,
+          "atol": 0.001
+        },
+        "runtime_seconds": 0.0002677440643310547,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": false,
+        "status": "NUMERICAL_MISMATCH",
+        "details": {
+          "candidate": 5.579242241712186,
+          "reference": 5.5791179805126285,
+          "absolute_error": 0.00012426119955755155,
+          "relative_error": 2.2272552756830928e-05,
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "threshold": 5.6791179805126285e-05
+        },
+        "runtime_seconds": 0.027731657028198242,
+        "message": "Candidate exceeds tolerance against independently integrated reference."
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    },
+    {
+      "attempt": 2,
+      "candidate": {
+        "problem_id": "mathn_ode_20260108_007",
+        "generator": "scipy",
+        "attempt": 2,
+        "result": {
+          "y_t_query": 5.579127965856416
+        },
+        "raw": {
+          "method": "RK45",
+          "rtol": 0.001,
+          "atol": 0.0001
+        },
+        "runtime_seconds": 0.0002224445343017578,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": true,
+        "status": "VERIFIED",
+        "details": {
+          "candidate": 5.579127965856416,
+          "reference": 5.5791179805126285,
+          "absolute_error": 9.985343787377587e-06,
+          "relative_error": 1.7897710394824988e-06,
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "threshold": 5.6791179805126285e-05
+        },
+        "runtime_seconds": 0.02750563621520996,
+        "message": null
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    }
+  ],
+  "final_status": "VERIFIED",
+  "attempts_used": 2,
+  "total_runtime_seconds": 0.0559542179107666
+}

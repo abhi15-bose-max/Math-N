@@ -1,0 +1,129 @@
+{
+  "trajectory_id": "e623c397-9366-4626-adfc-8b2d4b946cd1",
+  "problem_id": "mathn_sym_20263107_006",
+  "generator": "scipy",
+  "family": "symbolic",
+  "subtype": "derivative_at_point",
+  "created_at": 1789192448.964829,
+  "configuration": {
+    "max_attempts": 5,
+    "generator_timeout_seconds": 30,
+    "verifier_timeout_seconds": 30
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate": {
+        "problem_id": "mathn_sym_20263107_006",
+        "generator": "scipy",
+        "attempt": 1,
+        "result": {
+          "value": -1.7580145176150674
+        },
+        "raw": {
+          "method": "forward_difference",
+          "h": 0.1
+        },
+        "runtime_seconds": 9.775161743164062e-06,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": false,
+        "status": "NUMERICAL_MISMATCH",
+        "details": {
+          "candidate": -1.7580145176150674,
+          "reference": -1.6901915826655898,
+          "absolute_error": 0.06782293494947766,
+          "relative_error": 0.0401273652318837,
+          "atol": 0.0001,
+          "rtol": 0.0001,
+          "threshold": 0.000269019158266559,
+          "reference_method": "finite_difference"
+        },
+        "runtime_seconds": 8.106231689453125e-06,
+        "message": "Candidate exceeds tolerance against independent numerical reference."
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    },
+    {
+      "attempt": 2,
+      "candidate": {
+        "problem_id": "mathn_sym_20263107_006",
+        "generator": "scipy",
+        "attempt": 2,
+        "result": {
+          "value": -1.696963330115464
+        },
+        "raw": {
+          "method": "forward_difference",
+          "h": 0.01
+        },
+        "runtime_seconds": 4.76837158203125e-06,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": false,
+        "status": "NUMERICAL_MISMATCH",
+        "details": {
+          "candidate": -1.696963330115464,
+          "reference": -1.6901915826655898,
+          "absolute_error": 0.006771747449874299,
+          "relative_error": 0.004006496967163108,
+          "atol": 0.0001,
+          "rtol": 0.0001,
+          "threshold": 0.000269019158266559,
+          "reference_method": "finite_difference"
+        },
+        "runtime_seconds": 6.198883056640625e-06,
+        "message": "Candidate exceeds tolerance against independent numerical reference."
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    },
+    {
+      "attempt": 3,
+      "candidate": {
+        "problem_id": "mathn_sym_20263107_006",
+        "generator": "scipy",
+        "attempt": 3,
+        "result": {
+          "value": -1.690259289348628
+        },
+        "raw": {
+          "method": "forward_difference",
+          "h": 0.0001
+        },
+        "runtime_seconds": 4.0531158447265625e-06,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": true,
+        "status": "VERIFIED",
+        "details": {
+          "candidate": -1.690259289348628,
+          "reference": -1.6901915826655898,
+          "absolute_error": 6.770668303812677e-05,
+          "relative_error": 4.005858491576855e-05,
+          "atol": 0.0001,
+          "rtol": 0.0001,
+          "threshold": 0.000269019158266559,
+          "reference_method": "finite_difference"
+        },
+        "runtime_seconds": 5.7220458984375e-06,
+        "message": null
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    }
+  ],
+  "final_status": "VERIFIED",
+  "attempts_used": 3,
+  "total_runtime_seconds": 0.000171661376953125
+}

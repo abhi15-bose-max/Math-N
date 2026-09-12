@@ -1,0 +1,166 @@
+{
+  "trajectory_id": "ee180d3a-2a53-4d62-a990-4ca2be87cb83",
+  "problem_id": "mathn_root_20261110_009",
+  "generator": "scipy",
+  "family": "roots",
+  "subtype": "polynomial",
+  "created_at": 1789192448.9609816,
+  "configuration": {
+    "max_attempts": 5,
+    "generator_timeout_seconds": 30,
+    "verifier_timeout_seconds": 30
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate": {
+        "problem_id": "mathn_root_20261110_009",
+        "generator": "scipy",
+        "attempt": 1,
+        "result": {
+          "x": 1.2457159963364508
+        },
+        "raw": {
+          "method": "brentq",
+          "xtol": 0.1
+        },
+        "runtime_seconds": 1.8596649169921875e-05,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": false,
+        "status": "RESIDUAL_TOO_LARGE",
+        "details": {
+          "x": 1.2457159963364508,
+          "residual": 0.028191054742736643,
+          "absolute_residual": 0.028191054742736643,
+          "tolerance": 1e-06,
+          "domain": [
+            0.8107884634556062,
+            1.710788463455606
+          ]
+        },
+        "runtime_seconds": 4.0531158447265625e-06,
+        "message": "|f(x)| exceeds tolerance under independent evaluation."
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    },
+    {
+      "attempt": 2,
+      "candidate": {
+        "problem_id": "mathn_root_20261110_009",
+        "generator": "scipy",
+        "attempt": 2,
+        "result": {
+          "x": 1.26172254029768
+        },
+        "raw": {
+          "method": "brentq",
+          "xtol": 0.01
+        },
+        "runtime_seconds": 1.0251998901367188e-05,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": false,
+        "status": "RESIDUAL_TOO_LARGE",
+        "details": {
+          "x": 1.26172254029768,
+          "residual": -0.0017321157559151423,
+          "absolute_residual": 0.0017321157559151423,
+          "tolerance": 1e-06,
+          "domain": [
+            0.8107884634556062,
+            1.710788463455606
+          ]
+        },
+        "runtime_seconds": 2.1457672119140625e-06,
+        "message": "|f(x)| exceeds tolerance under independent evaluation."
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    },
+    {
+      "attempt": 3,
+      "candidate": {
+        "problem_id": "mathn_root_20261110_009",
+        "generator": "scipy",
+        "attempt": 3,
+        "result": {
+          "x": 1.2607959945296023
+        },
+        "raw": {
+          "method": "brentq",
+          "xtol": 0.0001
+        },
+        "runtime_seconds": 1.0013580322265625e-05,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": false,
+        "status": "RESIDUAL_TOO_LARGE",
+        "details": {
+          "x": 1.2607959945296023,
+          "residual": -1.3972308508858333e-05,
+          "absolute_residual": 1.3972308508858333e-05,
+          "tolerance": 1e-06,
+          "domain": [
+            0.8107884634556062,
+            1.710788463455606
+          ]
+        },
+        "runtime_seconds": 1.6689300537109375e-06,
+        "message": "|f(x)| exceeds tolerance under independent evaluation."
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    },
+    {
+      "attempt": 4,
+      "candidate": {
+        "problem_id": "mathn_root_20261110_009",
+        "generator": "scipy",
+        "attempt": 4,
+        "result": {
+          "x": 1.260788463394696
+        },
+        "raw": {
+          "method": "brentq",
+          "xtol": 1e-08
+        },
+        "runtime_seconds": 1.0967254638671875e-05,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": true,
+        "status": "VERIFIED",
+        "details": {
+          "x": 1.260788463394696,
+          "residual": 1.1300693714133558e-10,
+          "absolute_residual": 1.1300693714133558e-10,
+          "tolerance": 1e-06,
+          "domain": [
+            0.8107884634556062,
+            1.710788463455606
+          ]
+        },
+        "runtime_seconds": 1.9073486328125e-06,
+        "message": null
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    }
+  ],
+  "final_status": "VERIFIED",
+  "attempts_used": 4,
+  "total_runtime_seconds": 0.00019884109497070312
+}

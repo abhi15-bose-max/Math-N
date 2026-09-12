@@ -1,0 +1,103 @@
+{
+  "trajectory_id": "46d7813a-07fe-44a0-ad73-cecb9a3d3fa8",
+  "problem_id": "mathn_param_20262107_006",
+  "generator": "sympy",
+  "family": "parameter_estimation",
+  "subtype": "exponential_decay_fit",
+  "created_at": 1789192451.8367374,
+  "configuration": {
+    "max_attempts": 5,
+    "generator_timeout_seconds": 30,
+    "verifier_timeout_seconds": 30
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate": {
+        "problem_id": "mathn_param_20262107_006",
+        "generator": "sympy",
+        "attempt": 1,
+        "result": {
+          "parameters": {
+            "A": 56.77195458416846,
+            "k": 2.8241251029773498
+          }
+        },
+        "raw": {
+          "method": "sympy_loglinear_regression"
+        },
+        "runtime_seconds": 0.0003361701965332031,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": false,
+        "status": "NUMERICAL_MISMATCH",
+        "details": {
+          "parameters": {
+            "A": 56.77195458416846,
+            "k": 2.8241251029773498
+          },
+          "simulation_rmse": 7.742672250636733,
+          "relative_rmse": 8.513745014404124,
+          "threshold": 0.05,
+          "parameter_error": {
+            "A": 48.902540241892666,
+            "k": 1.3462950540821033
+          }
+        },
+        "runtime_seconds": 4.5299530029296875e-05,
+        "message": "Simulated curve does not match observations within tolerance."
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    },
+    {
+      "attempt": 2,
+      "candidate": {
+        "problem_id": "mathn_param_20262107_006",
+        "generator": "sympy",
+        "attempt": 2,
+        "result": {
+          "parameters": {
+            "A": 56.77195458416846,
+            "k": 2.8241251029773498
+          }
+        },
+        "raw": {
+          "method": "sympy_loglinear_regression"
+        },
+        "runtime_seconds": 4.673004150390625e-05,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": false,
+        "status": "NUMERICAL_MISMATCH",
+        "details": {
+          "parameters": {
+            "A": 56.77195458416846,
+            "k": 2.8241251029773498
+          },
+          "simulation_rmse": 7.742672250636733,
+          "relative_rmse": 8.513745014404124,
+          "threshold": 0.05,
+          "parameter_error": {
+            "A": 48.902540241892666,
+            "k": 1.3462950540821033
+          },
+          "duplicate_candidate": true
+        },
+        "runtime_seconds": 2.5272369384765625e-05,
+        "message": "Simulated curve does not match observations within tolerance."
+      },
+      "duplicate": true,
+      "duplicate_of_attempt": 1
+    }
+  ],
+  "final_status": "NUMERICAL_MISMATCH",
+  "attempts_used": 2,
+  "total_runtime_seconds": 0.0005700588226318359
+}

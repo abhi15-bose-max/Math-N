@@ -1,0 +1,92 @@
+{
+  "trajectory_id": "e0bdb3d4-bf57-4707-8768-9f469365687b",
+  "problem_id": "mathn_sym_20263106_005",
+  "generator": "scipy",
+  "family": "symbolic",
+  "subtype": "definite_integral",
+  "created_at": 1789192448.9642768,
+  "configuration": {
+    "max_attempts": 5,
+    "generator_timeout_seconds": 30,
+    "verifier_timeout_seconds": 30
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate": {
+        "problem_id": "mathn_sym_20263106_005",
+        "generator": "scipy",
+        "attempt": 1,
+        "result": {
+          "value": 5.473324802620803
+        },
+        "raw": {
+          "method": "simpson",
+          "panels": 4
+        },
+        "runtime_seconds": 6.508827209472656e-05,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": false,
+        "status": "NUMERICAL_MISMATCH",
+        "details": {
+          "candidate": 5.473324802620803,
+          "reference": 5.4694830669559265,
+          "absolute_error": 0.0038417356648761114,
+          "relative_error": 0.0007023946537262529,
+          "atol": 0.0001,
+          "rtol": 0.0001,
+          "threshold": 0.0006469483066955927,
+          "reference_method": "quad"
+        },
+        "runtime_seconds": 3.170967102050781e-05,
+        "message": "Candidate exceeds tolerance against independent numerical reference."
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    },
+    {
+      "attempt": 2,
+      "candidate": {
+        "problem_id": "mathn_sym_20263106_005",
+        "generator": "scipy",
+        "attempt": 2,
+        "result": {
+          "value": 5.46949654774479
+        },
+        "raw": {
+          "method": "simpson",
+          "panels": 16
+        },
+        "runtime_seconds": 5.125999450683594e-05,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": true,
+        "status": "VERIFIED",
+        "details": {
+          "candidate": 5.46949654774479,
+          "reference": 5.4694830669559265,
+          "absolute_error": 1.3480788863873272e-05,
+          "relative_error": 2.4647281468550346e-06,
+          "atol": 0.0001,
+          "rtol": 0.0001,
+          "threshold": 0.0006469483066955927,
+          "reference_method": "quad"
+        },
+        "runtime_seconds": 2.4557113647460938e-05,
+        "message": null
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    }
+  ],
+  "final_status": "VERIFIED",
+  "attempts_used": 2,
+  "total_runtime_seconds": 0.00024890899658203125
+}

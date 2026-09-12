@@ -1,0 +1,129 @@
+{
+  "trajectory_id": "5b77520a-8e65-45d5-a473-bbad7c3f4b62",
+  "problem_id": "mathn_ode_20260104_003",
+  "generator": "scipy",
+  "family": "ode",
+  "subtype": "linear_ode",
+  "created_at": 1789192448.076704,
+  "configuration": {
+    "max_attempts": 5,
+    "generator_timeout_seconds": 30,
+    "verifier_timeout_seconds": 30
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate": {
+        "problem_id": "mathn_ode_20260104_003",
+        "generator": "scipy",
+        "attempt": 1,
+        "result": {
+          "y_t_query": 0.25345359654365296
+        },
+        "raw": {
+          "method": "RK45",
+          "rtol": 0.01,
+          "atol": 0.001
+        },
+        "runtime_seconds": 0.00032210350036621094,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": false,
+        "status": "NUMERICAL_MISMATCH",
+        "details": {
+          "candidate": 0.25345359654365296,
+          "reference": 0.25166318377919106,
+          "absolute_error": 0.0017904127644619017,
+          "relative_error": 0.007114321362288762,
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "threshold": 3.516631837791911e-06
+        },
+        "runtime_seconds": 0.2047433853149414,
+        "message": "Candidate exceeds tolerance against independently integrated reference."
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    },
+    {
+      "attempt": 2,
+      "candidate": {
+        "problem_id": "mathn_ode_20260104_003",
+        "generator": "scipy",
+        "attempt": 2,
+        "result": {
+          "y_t_query": 0.25177542704142825
+        },
+        "raw": {
+          "method": "RK45",
+          "rtol": 0.001,
+          "atol": 0.0001
+        },
+        "runtime_seconds": 0.00034236907958984375,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": false,
+        "status": "NUMERICAL_MISMATCH",
+        "details": {
+          "candidate": 0.25177542704142825,
+          "reference": 0.25166318377919106,
+          "absolute_error": 0.00011224326223718828,
+          "relative_error": 0.00044600588990271366,
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "threshold": 3.516631837791911e-06
+        },
+        "runtime_seconds": 0.22259020805358887,
+        "message": "Candidate exceeds tolerance against independently integrated reference."
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    },
+    {
+      "attempt": 3,
+      "candidate": {
+        "problem_id": "mathn_ode_20260104_003",
+        "generator": "scipy",
+        "attempt": 3,
+        "result": {
+          "y_t_query": 0.2516640834686463
+        },
+        "raw": {
+          "method": "RK45",
+          "rtol": 1e-05,
+          "atol": 1.0000000000000002e-06
+        },
+        "runtime_seconds": 0.0005702972412109375,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": true,
+        "status": "VERIFIED",
+        "details": {
+          "candidate": 0.2516640834686463,
+          "reference": 0.25166318377919106,
+          "absolute_error": 8.996894552693036e-07,
+          "relative_error": 3.57497446292617e-06,
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "threshold": 3.516631837791911e-06
+        },
+        "runtime_seconds": 0.20285677909851074,
+        "message": null
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    }
+  ],
+  "final_status": "VERIFIED",
+  "attempts_used": 3,
+  "total_runtime_seconds": 0.6319334506988525
+}

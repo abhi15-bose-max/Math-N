@@ -1,0 +1,55 @@
+{
+  "trajectory_id": "90912b01-f421-4604-9f65-f8614a246476",
+  "problem_id": "mathn_sym_20263105_004",
+  "generator": "sympy",
+  "family": "symbolic",
+  "subtype": "derivative_at_point",
+  "created_at": 1789192452.2758954,
+  "configuration": {
+    "max_attempts": 5,
+    "generator_timeout_seconds": 30,
+    "verifier_timeout_seconds": 30
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate": {
+        "problem_id": "mathn_sym_20263105_004",
+        "generator": "sympy",
+        "attempt": 1,
+        "result": {
+          "value": -4.533573586657976
+        },
+        "raw": {
+          "method": "sympy.diff",
+          "expr": "0.830482083187504*x + 2.41406486997524*sin(1.77773437164576*x) + 0.854160974681205*cos(1.77773437164576*x) - 1.04061912451795"
+        },
+        "runtime_seconds": 0.009853124618530273,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": true,
+        "status": "VERIFIED",
+        "details": {
+          "candidate": -4.533573586657976,
+          "reference": -4.533573586655293,
+          "absolute_error": 2.6831870059140783e-12,
+          "relative_error": 5.918481203905277e-13,
+          "atol": 0.0001,
+          "rtol": 0.0001,
+          "threshold": 0.0005533573586655293,
+          "reference_method": "finite_difference"
+        },
+        "runtime_seconds": 1.4066696166992188e-05,
+        "message": null
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    }
+  ],
+  "final_status": "VERIFIED",
+  "attempts_used": 1,
+  "total_runtime_seconds": 0.009954452514648438
+}

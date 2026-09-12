@@ -1,0 +1,60 @@
+{
+  "trajectory_id": "aa911f32-9ce6-4321-99e0-1e5a5a65c797",
+  "problem_id": "mathn_param_20262105_004",
+  "generator": "sympy",
+  "family": "parameter_estimation",
+  "subtype": "exponential_decay_fit",
+  "created_at": 1789192451.795497,
+  "configuration": {
+    "max_attempts": 5,
+    "generator_timeout_seconds": 30,
+    "verifier_timeout_seconds": 30
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate": {
+        "problem_id": "mathn_param_20262105_004",
+        "generator": "sympy",
+        "attempt": 1,
+        "result": {
+          "parameters": {
+            "A": 4.521387403155642,
+            "k": 0.8880933301416751
+          }
+        },
+        "raw": {
+          "method": "sympy_loglinear_regression"
+        },
+        "runtime_seconds": 0.0002777576446533203,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": true,
+        "status": "VERIFIED",
+        "details": {
+          "parameters": {
+            "A": 4.521387403155642,
+            "k": 0.8880933301416751
+          },
+          "simulation_rmse": 0.02865834365197487,
+          "relative_rmse": 0.03437397521143241,
+          "threshold": 0.05,
+          "parameter_error": {
+            "A": 0.10665258012334977,
+            "k": 0.026235984399353818
+          }
+        },
+        "runtime_seconds": 5.412101745605469e-05,
+        "message": null
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    }
+  ],
+  "final_status": "VERIFIED",
+  "attempts_used": 1,
+  "total_runtime_seconds": 0.0004432201385498047
+}

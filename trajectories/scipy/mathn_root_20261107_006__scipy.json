@@ -1,0 +1,129 @@
+{
+  "trajectory_id": "7215c58a-c91d-457a-b9a9-b3785856c29c",
+  "problem_id": "mathn_root_20261107_006",
+  "generator": "scipy",
+  "family": "roots",
+  "subtype": "polynomial",
+  "created_at": 1789192448.958978,
+  "configuration": {
+    "max_attempts": 5,
+    "generator_timeout_seconds": 30,
+    "verifier_timeout_seconds": 30
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate": {
+        "problem_id": "mathn_root_20261107_006",
+        "generator": "scipy",
+        "attempt": 1,
+        "result": {
+          "x": 2.8579954477838925
+        },
+        "raw": {
+          "method": "brentq",
+          "xtol": 0.1
+        },
+        "runtime_seconds": 1.7404556274414062e-05,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": false,
+        "status": "RESIDUAL_TOO_LARGE",
+        "details": {
+          "x": 2.8579954477838925,
+          "residual": 0.008325429465876999,
+          "absolute_residual": 0.008325429465876999,
+          "tolerance": 1e-06,
+          "domain": [
+            2.4054116845246334,
+            3.3054116845246337
+          ]
+        },
+        "runtime_seconds": 3.814697265625e-06,
+        "message": "|f(x)| exceeds tolerance under independent evaluation."
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    },
+    {
+      "attempt": 2,
+      "candidate": {
+        "problem_id": "mathn_root_20261107_006",
+        "generator": "scipy",
+        "attempt": 2,
+        "result": {
+          "x": 2.8529954477838912
+        },
+        "raw": {
+          "method": "brentq",
+          "xtol": 0.01
+        },
+        "runtime_seconds": 9.775161743164062e-06,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": false,
+        "status": "RESIDUAL_TOO_LARGE",
+        "details": {
+          "x": 2.8529954477838912,
+          "residual": -0.00777354255168583,
+          "absolute_residual": 0.00777354255168583,
+          "tolerance": 1e-06,
+          "domain": [
+            2.4054116845246334,
+            3.3054116845246337
+          ]
+        },
+        "runtime_seconds": 2.384185791015625e-06,
+        "message": "|f(x)| exceeds tolerance under independent evaluation."
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    },
+    {
+      "attempt": 3,
+      "candidate": {
+        "problem_id": "mathn_root_20261107_006",
+        "generator": "scipy",
+        "attempt": 3,
+        "result": {
+          "x": 2.8554116432783356
+        },
+        "raw": {
+          "method": "brentq",
+          "xtol": 0.0001
+        },
+        "runtime_seconds": 1.1205673217773438e-05,
+        "malformed": false,
+        "error": null,
+        "timed_out": false
+      },
+      "verification": {
+        "verified": true,
+        "status": "VERIFIED",
+        "details": {
+          "x": 2.8554116432783356,
+          "residual": -1.3279768773521994e-07,
+          "absolute_residual": 1.3279768773521994e-07,
+          "tolerance": 1e-06,
+          "domain": [
+            2.4054116845246334,
+            3.3054116845246337
+          ]
+        },
+        "runtime_seconds": 2.384185791015625e-06,
+        "message": null
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    }
+  ],
+  "final_status": "VERIFIED",
+  "attempts_used": 3,
+  "total_runtime_seconds": 0.0001430511474609375
+}

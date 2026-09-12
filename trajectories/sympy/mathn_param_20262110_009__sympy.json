@@ -1,0 +1,143 @@
+{
+  "trajectory_id": "bc73ebc5-c039-4a36-82b0-254ee3cc1bcd",
+  "problem_id": "mathn_param_20262110_009",
+  "generator": "sympy",
+  "family": "parameter_estimation",
+  "subtype": "logistic_growth_fit",
+  "created_at": 1789192451.9852312,
+  "configuration": {
+    "max_attempts": 5,
+    "generator_timeout_seconds": 30,
+    "verifier_timeout_seconds": 30
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate": {
+        "problem_id": "mathn_param_20262110_009",
+        "generator": "sympy",
+        "attempt": 1,
+        "result": {},
+        "raw": null,
+        "runtime_seconds": null,
+        "malformed": true,
+        "error": "2-point nsolve failed to converge: Could not find root within given tolerance. (3.143862287130697385286436262737e-11 > 2.524354896707237777317531408905e-29)\nTry another starting point or tweak arguments.",
+        "timed_out": false
+      },
+      "verification": {
+        "verified": false,
+        "status": "MALFORMED_CANDIDATE",
+        "details": {
+          "reason": "2-point nsolve failed to converge: Could not find root within given tolerance. (3.143862287130697385286436262737e-11 > 2.524354896707237777317531408905e-29)\nTry another starting point or tweak arguments."
+        },
+        "runtime_seconds": null,
+        "message": null
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    },
+    {
+      "attempt": 2,
+      "candidate": {
+        "problem_id": "mathn_param_20262110_009",
+        "generator": "sympy",
+        "attempt": 2,
+        "result": {},
+        "raw": null,
+        "runtime_seconds": null,
+        "malformed": true,
+        "error": "2-point nsolve failed to converge: Could not find root within given tolerance. (3.143862287130697385286436262737e-11 > 2.524354896707237777317531408905e-29)\nTry another starting point or tweak arguments.",
+        "timed_out": false
+      },
+      "verification": {
+        "verified": false,
+        "status": "MALFORMED_CANDIDATE",
+        "details": {
+          "reason": "2-point nsolve failed to converge: Could not find root within given tolerance. (3.143862287130697385286436262737e-11 > 2.524354896707237777317531408905e-29)\nTry another starting point or tweak arguments."
+        },
+        "runtime_seconds": null,
+        "message": null
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    },
+    {
+      "attempt": 3,
+      "candidate": {
+        "problem_id": "mathn_param_20262110_009",
+        "generator": "sympy",
+        "attempt": 3,
+        "result": {},
+        "raw": null,
+        "runtime_seconds": null,
+        "malformed": true,
+        "error": "2-point nsolve failed to converge: Could not find root within given tolerance. (3.143862287130697385286436262737e-11 > 2.524354896707237777317531408905e-29)\nTry another starting point or tweak arguments.",
+        "timed_out": false
+      },
+      "verification": {
+        "verified": false,
+        "status": "MALFORMED_CANDIDATE",
+        "details": {
+          "reason": "2-point nsolve failed to converge: Could not find root within given tolerance. (3.143862287130697385286436262737e-11 > 2.524354896707237777317531408905e-29)\nTry another starting point or tweak arguments."
+        },
+        "runtime_seconds": null,
+        "message": null
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    },
+    {
+      "attempt": 4,
+      "candidate": {
+        "problem_id": "mathn_param_20262110_009",
+        "generator": "sympy",
+        "attempt": 4,
+        "result": {},
+        "raw": null,
+        "runtime_seconds": null,
+        "malformed": true,
+        "error": "2-point nsolve failed to converge: Could not find root within given tolerance. (3.143862287130697385286436262737e-11 > 2.524354896707237777317531408905e-29)\nTry another starting point or tweak arguments.",
+        "timed_out": false
+      },
+      "verification": {
+        "verified": false,
+        "status": "MALFORMED_CANDIDATE",
+        "details": {
+          "reason": "2-point nsolve failed to converge: Could not find root within given tolerance. (3.143862287130697385286436262737e-11 > 2.524354896707237777317531408905e-29)\nTry another starting point or tweak arguments."
+        },
+        "runtime_seconds": null,
+        "message": null
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    },
+    {
+      "attempt": 5,
+      "candidate": {
+        "problem_id": "mathn_param_20262110_009",
+        "generator": "sympy",
+        "attempt": 5,
+        "result": {},
+        "raw": null,
+        "runtime_seconds": null,
+        "malformed": true,
+        "error": "2-point nsolve failed to converge: Could not find root within given tolerance. (3.143862287130697385286436262737e-11 > 2.524354896707237777317531408905e-29)\nTry another starting point or tweak arguments.",
+        "timed_out": false
+      },
+      "verification": {
+        "verified": false,
+        "status": "MALFORMED_CANDIDATE",
+        "details": {
+          "reason": "2-point nsolve failed to converge: Could not find root within given tolerance. (3.143862287130697385286436262737e-11 > 2.524354896707237777317531408905e-29)\nTry another starting point or tweak arguments."
+        },
+        "runtime_seconds": null,
+        "message": null
+      },
+      "duplicate": false,
+      "duplicate_of_attempt": null
+    }
+  ],
+  "final_status": "MALFORMED_CANDIDATE",
+  "attempts_used": 5,
+  "total_runtime_seconds": 0.10626387596130371
+}
