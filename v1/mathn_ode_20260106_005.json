@@ -1,0 +1,28 @@
+{
+  "problem_id": "mathn_ode_20260106_005",
+  "family": "ode",
+  "subtype": "exponential_decay",
+  "seed": 20260106,
+  "public": {
+    "equation": "dy/dt = -1.233 * y",
+    "subtype": "exponential_decay",
+    "params": {
+      "k": 1.233000548184367
+    },
+    "y0": [
+      9.095562292084438
+    ],
+    "t0": 0.0,
+    "t_query": 1.8768523560354229,
+    "query": "compute y(t_query) for the component of interest (index 0)"
+  },
+  "metadata": {
+    "tags": [
+      "ode",
+      "exponential_decay"
+    ]
+  },
+  "protected": {
+    "reference_y": 0.8990889110239307
+  }
+}

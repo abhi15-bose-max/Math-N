@@ -1,0 +1,27 @@
+{
+  "problem_id": "mathn_root_20261106_005",
+  "family": "roots",
+  "subtype": "nonlinear",
+  "seed": 20261106,
+  "public": {
+    "subtype": "nonlinear",
+    "expression": "x*exp(x) - (1.49041)",
+    "params": {
+      "c": 1.4904132249366049
+    },
+    "domain": [
+      0.0,
+      6.0
+    ],
+    "query": "find x in domain such that f(x) = 0"
+  },
+  "metadata": {
+    "tags": [
+      "roots",
+      "nonlinear"
+    ]
+  },
+  "protected": {
+    "constructed_root": 0.723167635870679
+  }
+}

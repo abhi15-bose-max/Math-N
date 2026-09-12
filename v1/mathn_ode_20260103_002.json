@@ -1,0 +1,29 @@
+{
+  "problem_id": "mathn_ode_20260103_002",
+  "family": "ode",
+  "subtype": "logistic_growth",
+  "seed": 20260103,
+  "public": {
+    "equation": "dy/dt = 0.59437 * y * (1 - y/26.8723)",
+    "subtype": "logistic_growth",
+    "params": {
+      "r": 0.5943703904123352,
+      "K": 26.872280978423365
+    },
+    "y0": [
+      2.0425712082171614
+    ],
+    "t0": 0.0,
+    "t_query": 1.3124332518295143,
+    "query": "compute y(t_query) for the component of interest (index 0)"
+  },
+  "metadata": {
+    "tags": [
+      "ode",
+      "logistic_growth"
+    ]
+  },
+  "protected": {
+    "reference_y": 4.088883860350335
+  }
+}

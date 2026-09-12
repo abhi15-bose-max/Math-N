@@ -1,0 +1,32 @@
+{
+  "problem_id": "mathn_ode_20260105_004",
+  "family": "ode",
+  "subtype": "coupled_linear_system",
+  "seed": 20260105,
+  "public": {
+    "equation": "dx/dt = -0.942168 x + -0.278957 y; dy/dt = -0.216305 x + -0.987754 y",
+    "subtype": "coupled_linear_system",
+    "params": {
+      "a": -0.9421681754855146,
+      "b": -0.278956859983848,
+      "c": -0.21630454824021172,
+      "d": -0.9877541774222021
+    },
+    "y0": [
+      -0.6206294844762388,
+      0.09593156092588107
+    ],
+    "t0": 0.0,
+    "t_query": 2.106204373711633,
+    "query": "compute x(t_query), i.e. the first component of the system"
+  },
+  "metadata": {
+    "tags": [
+      "ode",
+      "coupled_linear_system"
+    ]
+  },
+  "protected": {
+    "reference_y": -0.10434388398458352
+  }
+}
