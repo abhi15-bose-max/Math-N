@@ -1,0 +1,29 @@
+{
+  "problem_id": "mathn_root_20261104_003",
+  "family": "roots",
+  "subtype": "polynomial",
+  "seed": 20261104,
+  "public": {
+    "subtype": "polynomial",
+    "expression": "1*x^2 + (-8.08908)*x + (12.5354)",
+    "params": {
+      "a": 1.0,
+      "b": -8.089078710200138,
+      "c": 12.535358678645785
+    },
+    "domain": [
+      1.6393053751612243,
+      2.5393053751612245
+    ],
+    "query": "find x in domain such that f(x) = 0"
+  },
+  "metadata": {
+    "tags": [
+      "roots",
+      "polynomial"
+    ]
+  },
+  "protected": {
+    "constructed_root": 2.0893053751612243
+  }
+}

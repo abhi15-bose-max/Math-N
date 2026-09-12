@@ -1,0 +1,29 @@
+{
+  "problem_id": "mathn_ode_20260109_008",
+  "family": "ode",
+  "subtype": "linear_ode",
+  "seed": 20260109,
+  "public": {
+    "equation": "dy/dt = -0.54878 * y + -0.383422",
+    "subtype": "linear_ode",
+    "params": {
+      "a": -0.5487801252020406,
+      "b": -0.38342162910449984
+    },
+    "y0": [
+      3.184223377446992
+    ],
+    "t0": 0.0,
+    "t_query": 0.8211386765618572,
+    "query": "compute y(t_query) for the component of interest (index 0)"
+  },
+  "metadata": {
+    "tags": [
+      "ode",
+      "linear_ode"
+    ]
+  },
+  "protected": {
+    "reference_y": 1.7756226521221286
+  }
+}

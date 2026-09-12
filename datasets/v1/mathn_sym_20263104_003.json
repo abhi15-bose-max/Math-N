@@ -1,0 +1,33 @@
+{
+  "problem_id": "mathn_sym_20263104_003",
+  "family": "symbolic",
+  "subtype": "definite_integral",
+  "seed": 20263104,
+  "public": {
+    "subtype": "definite_integral",
+    "params": {
+      "coeffs": [
+        -0.6176529393187522,
+        -1.8937553762787993,
+        1.853903361887192
+      ],
+      "trig": {
+        "sin_amp": 1.3741884331538525,
+        "cos_amp": 0.2968922248818582,
+        "freq": 0.6038160972999229
+      }
+    },
+    "interval": [
+      -1.1148223935577042,
+      1.3356291641393654
+    ],
+    "query": "compute the definite integral of f over interval"
+  },
+  "metadata": {
+    "tags": [
+      "symbolic",
+      "definite_integral"
+    ]
+  },
+  "protected": {}
+}

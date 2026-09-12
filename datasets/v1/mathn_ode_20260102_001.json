@@ -1,0 +1,28 @@
+{
+  "problem_id": "mathn_ode_20260102_001",
+  "family": "ode",
+  "subtype": "exponential_growth",
+  "seed": 20260102,
+  "public": {
+    "equation": "dy/dt = 0.308532 * y",
+    "subtype": "exponential_growth",
+    "params": {
+      "r": 0.3085318119033279
+    },
+    "y0": [
+      4.281943385633417
+    ],
+    "t0": 0.0,
+    "t_query": 0.9705797067610304,
+    "query": "compute y(t_query) for the component of interest (index 0)"
+  },
+  "metadata": {
+    "tags": [
+      "ode",
+      "exponential_growth"
+    ]
+  },
+  "protected": {
+    "reference_y": 5.776868097154257
+  }
+}

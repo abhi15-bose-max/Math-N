@@ -1,0 +1,30 @@
+{
+  "problem_id": "mathn_sym_20263107_006",
+  "family": "symbolic",
+  "subtype": "derivative_at_point",
+  "seed": 20263107,
+  "public": {
+    "subtype": "derivative_at_point",
+    "params": {
+      "coeffs": [
+        -0.5227541871657193,
+        -1.9166176425276946,
+        -0.8585545021187944
+      ],
+      "trig": {
+        "sin_amp": 0.19267522595133024,
+        "cos_amp": -0.6602588716587192,
+        "freq": 0.7369217442488911
+      }
+    },
+    "point": -0.062258207253848674,
+    "query": "compute f'(point)"
+  },
+  "metadata": {
+    "tags": [
+      "symbolic",
+      "derivative_at_point"
+    ]
+  },
+  "protected": {}
+}

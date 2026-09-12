@@ -1,0 +1,25 @@
+{
+  "problem_id": "mathn_root_20261108_007",
+  "family": "roots",
+  "subtype": "transcendental",
+  "seed": 20261108,
+  "public": {
+    "subtype": "transcendental",
+    "expression": "cos(x) - x",
+    "params": {},
+    "domain": [
+      0.0,
+      1.0
+    ],
+    "query": "find x in domain such that f(x) = 0"
+  },
+  "metadata": {
+    "tags": [
+      "roots",
+      "transcendental"
+    ]
+  },
+  "protected": {
+    "constructed_root": 0.7390851332151607
+  }
+}
